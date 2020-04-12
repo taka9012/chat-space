@@ -2,13 +2,13 @@
 
 | Column  	| Type    | Options     |
 | :-------	| :------ | :---------- |
-| name	 	| string  | null: false, index: true |
-| email 	| string  | null: false |
+| name	 	  | string  | null: false, index: true |
+| email   	| string  | null: false |
 | password  | string  | null: false |
 ### Association
 - has_many :posts
 - has_many :groups_users
-- has_many :groups, through :groups_users
+- has_many :groups, through: :groups_users
 
 
 ## groupsテーブル
