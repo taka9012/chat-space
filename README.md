@@ -40,10 +40,10 @@
 
 | Column  	| Type    | Options     |
 | :-------	| :------ | :---------- |
-| text		| text    | null: false|
-| image		| string  | null: false |
-| user_id	| integer | null: false, foreign_key: true |
-| group_id	| integer | null: false, foreign_key: true |
+| text      | text    | none |
+| image     | string  | none |
+| user_id   | integer | null: false, foreign_key: true |
+| group_id  | integer | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :user
