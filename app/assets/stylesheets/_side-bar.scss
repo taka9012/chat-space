@@ -22,11 +22,15 @@
         display: flex;
         justify-content: flex-end;
         line-height: 20px;
+        li{
+          margin-left: 5px;
+        }
         .icon-color{
           color: #ffffff;
         }
         .icon-btn{
-          text-decoration: none
+          text-decoration: none;
+
         }
       }
     }
