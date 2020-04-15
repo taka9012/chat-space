@@ -1,12 +1,37 @@
 .side-bar{
-  height: 100vh;
   width: 300px;
+  height: 100vh;
   float: left;
-  .side-bar__user-name{
+  &__header{
     height: 100px;
     background-color: #253141;
+    display: flex;
+    align-items: center;
+    &__box{
+      width: 260px;
+      height: 20px;
+      margin: 0 auto;
+      background-color: #d8d8d8;
+      display: flex;
+      justify-content: space-between;
+      &__user-name{
+        line-height: 20px;
+      }
+      &__menu{
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        line-height: 20px;
+        .icon-color{
+          color: #ffffff;
+        }
+        .icon-btn{
+          text-decoration: none
+        }
+      }
+    }
   }
-  .side-bar__group-list{
+  &__group-list{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
   }
