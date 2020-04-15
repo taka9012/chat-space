@@ -22,7 +22,7 @@
         display: flex;
         justify-content: flex-end;
         line-height: 20px;
-        li{
+        &__icon{
           margin-left: 5px;
         }
         .icon-color{
@@ -30,7 +30,6 @@
         }
         .icon-btn{
           text-decoration: none;
-
         }
       }
     }
