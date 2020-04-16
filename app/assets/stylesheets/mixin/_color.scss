@@ -1,5 +1,9 @@
 $fff: #ffffff;
-@mixin bgclf{
+$333: #333333;
+@mixin bgcolof{
   background-color: $fff;
+}
+@mixin colo333 {
+  color: #333333;
 }
 

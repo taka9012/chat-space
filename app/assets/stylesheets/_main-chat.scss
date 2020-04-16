@@ -8,25 +8,25 @@
   float: right;
   &__group{
     height: 100px;
-    @include bgclf;
+    @include bgcolof;
     padding: 0 40px 0;
     border-bottom: solid 1px #eeeeee;
     @include fbjcbet;
     &__left{
-      &__test{
-        @include margtop(35px);
-        color: #333333;
+      &__test{        
+        margin-top: 35px;
+        @include colo333;
         font-size: 20px;
       }
-      &__member{
-        @include margtop(15px);
+      &__member{      
+        margin-top: 15px;
         color: #999999;
         font-size: 12px;
       }
     }
     &__right{
-      &__edit{
-        @include margtop(28px);
+      &__edit{        
+        margin-top: 28px;
         padding: 0 20px;
         @include heiwid(40px,72px);
         line-height: 40px;
@@ -51,9 +51,9 @@
       position: relative;
       &__text{
         padding: 0 10px 0;
-        @include bgclf;
+        @include bgcolof;
         width: 100%;
-        line-height: 50px;
+        @include lihei50;
       }
       &__image{
         font-size: 1.3rem;
@@ -72,7 +72,7 @@
       background-color: #38aef0;
       color: $fff;
       text-align: center;
-      @include lihei;
+      @include lihei50;
     }
   } 
 }

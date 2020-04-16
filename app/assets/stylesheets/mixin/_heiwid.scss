@@ -2,6 +2,6 @@
   height: $hei;
   width: $wid;
 }
-@mixin lihei($valu: 50px) {
-  line-height: $valu;  
+@mixin lihei50 {
+  line-height: 50px;  
 }
