@@ -1,78 +1,13 @@
 @import "mixin/color";
 @import "mixin/flexb";
 @import "mixin/heiwid";
-@import "mixin/padmarg";
 .chat-main{
   $wcal: calc(100vw - 300px);
   @include heiwid(100vh, $wcal);
   float: right;
-  &__group{
-    height: 100px;
-    @include bgcolof;
-    padding: 0 40px 0;
-    border-bottom: solid 1px #eeeeee;
-    @include fbjcbet;
-    &__left{
-      &__test{        
-        margin-top: 35px;
-        @include colo333;
-        font-size: 20px;
-      }
-      &__member{      
-        margin-top: 15px;
-        color: #999999;
-        font-size: 12px;
-      }
-    }
-    &__right{
-      &__edit{        
-        margin-top: 28px;
-        padding: 0 20px;
-        @include heiwid(40px,72px);
-        line-height: 40px;
-        color: #38aef0;
-        font-size: 16px;
-      }
-    }
-  }
   &__message{
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 35px 0 0 40px;
   }
-  &__btm{
-    height: 90px;
-    background-color: #d2d2d2;
-    @include fb;
-    padding: 20px 40px;
-    &__form{
-      @include heiwid(50px,390px);
-      @include fb;
-      position: relative;
-      &__text{
-        padding: 0 10px 0;
-        @include bgcolof;
-        width: 100%;
-        @include lihei50;
-      }
-      &__image{
-        font-size: 1.3rem;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        cursor: pointer;
-        #image-icon{
-          
-        }
-      }
-    }
-    &__send{
-      margin-left: 15px;
-      @include heiwid(50px,100px);
-      background-color: #38aef0;
-      color: $fff;
-      text-align: center;
-      @include lihei50;
-    }
-  } 
 }

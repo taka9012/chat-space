@@ -1,7 +1,7 @@
 @import "mixin/color";
-@import "mixin/heiwid";
+@import "mixin/flexb";
 .namedate{
-  display: flex;
+  @include fb;
   &__name{
     @include colo333;
     font-size: 16px;

@@ -1,9 +1,9 @@
 $fff: #ffffff;
-$333: #333333;
+$cl333: #333333;
 @mixin bgcolof{
   background-color: $fff;
 }
 @mixin colo333 {
-  color: #333333;
+  color: $cl333;
 }
 

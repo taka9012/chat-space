@@ -2,6 +2,9 @@
 @import "modules/messages";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "main-chat";
 @import "side-bar";
-@import "loop-message"
+@import "./partial/side-bar_header";
+@import "main-chat";
+@import "partial/main-chat_group";
+@import "partial/main-chat_btm";
+@import "loop-message";

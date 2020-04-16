@@ -1,0 +1,38 @@
+@import "./mixin/flexb";
+@import "./mixin/heiwid";
+@import "./mixin/color";
+.chat-main__btm{
+  height: 90px;
+  background-color: #d2d2d2;
+  @include fb;
+  padding: 20px 40px;
+  &__form{
+    @include heiwid(50px,390px);
+    @include fb;
+    position: relative;
+    &__text{
+      padding: 0 10px 0;
+      @include bgcolof;
+      width: 100%;
+      @include lihei50;
+    }
+    &__image{
+      font-size: 1.3rem;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+      .hidden{
+        display: none;
+      }
+    }
+  }
+  &__send{
+    margin-left: 15px;
+    @include heiwid(50px,100px);
+    background-color: #38aef0;
+    color: $fff;
+    text-align: center;
+    @include lihei50;
+  }
+} 
