@@ -1,1 +1,23 @@
-＜チャット画面＞
+.chat-main
+  .chat-main__group
+    .chat-main__group__left
+      .chat-main__group__left__test<
+        test
+      .chat-main__group__left__member<
+        Member : masa
+    .chat-main__group__right
+      .chat-main__group__right__edit<
+        = link_to '#' do
+          Edit
+  .chat-main__message
+    = render partial: "loop-message"
+    = render partial: "loop-message"
+  .chat-main__btm
+    .chat-main__btm__form
+      .chat-main__btm__form__text<
+        type a message
+      %label{class: "chat-main__btm__form__image"} 
+        = icon('fas', 'image')
+        %input{type: "file", class: "hidden"}
+    .chat-main__btm__send<
+      Send

@@ -1,0 +1,32 @@
+@import "./mixin/color";
+@import "./mixin/flexb";
+@import "./mixin/heiwid";
+.chat-main__group{
+  height: 100px;
+  @include bgcolof;
+  padding: 0 40px 0;
+  border-bottom: solid 1px #eeeeee;
+  @include fbjcbet;
+  &__left{
+    &__test{        
+      margin-top: 35px;
+      @include colo333;
+      font-size: 20px;
+    }
+    &__member{      
+      margin-top: 15px;
+      color: #999999;
+      font-size: 12px;
+    }
+  }
+  &__right{
+    &__edit{        
+      margin-top: 28px;
+      padding: 0 20px;
+      @include heiwid(40px,72px);
+      line-height: 40px;
+      color: #38aef0;
+      font-size: 16px;
+    }
+  }
+}
