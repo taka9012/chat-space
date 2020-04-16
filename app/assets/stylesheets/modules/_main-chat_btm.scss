@@ -31,7 +31,7 @@
     margin-left: 15px;
     @include heiwid(50px,100px);
     background-color: #38aef0;
-    color: $fff;
+    @include colofff;
     text-align: center;
     @include lihei50;
   }

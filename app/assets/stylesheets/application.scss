@@ -3,8 +3,8 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "side-bar";
-@import "./partial/side-bar_header";
+@import "modules/side-bar_header";
 @import "main-chat";
-@import "partial/main-chat_group";
-@import "partial/main-chat_btm";
-@import "loop-message";
+@import "modules/main-chat_group";
+@import "modules/main-chat_btm";
+@import "modules/loop-message";

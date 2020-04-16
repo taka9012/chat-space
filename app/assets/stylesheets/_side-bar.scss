@@ -1,19 +1,20 @@
+@import "mixin/heiwid";
+@import "mixin/color";
 .side-bar{
-  width: 300px;
-  height: 100vh;
+  @include heiwid(100vh,300px);
   float: left;
   &__body{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 0;
     &__group{
-      &__tech{
-        color: #ffffff;
+      &__tech{        
+        @include colofff;
         height: 20px;
         font-size: 15px;
       }
-      &__message{
-        color: #ffffff;
+      &__message{        
+        @include colofff;
         margin: 5px 0 40px;
         font-size: 11px;
       }

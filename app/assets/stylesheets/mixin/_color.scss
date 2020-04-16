@@ -1,9 +1,10 @@
-$fff: #ffffff;
-$cl333: #333333;
 @mixin bgcolof{
-  background-color: $fff;
+  background-color: #ffffff;
 }
 @mixin colo333 {
-  color: $cl333;
+  color: #333333;
+}
+@mixin colofff {
+  color: #ffffff;
 }
 
