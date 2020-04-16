@@ -1,5 +1,3 @@
-@import "mixin/color";
-@import "mixin/flexb";
 .namedate{
   @include fb;
   &__name{

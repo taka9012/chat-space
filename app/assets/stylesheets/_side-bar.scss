@@ -1,5 +1,3 @@
-@import "mixin/heiwid";
-@import "mixin/color";
 .side-bar{
   @include heiwid(100vh,300px);
   float: left;

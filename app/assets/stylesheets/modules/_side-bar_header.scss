@@ -1,6 +1,3 @@
-@import "./mixin/flexb";
-@import "./mixin/heiwid";
-@import "./mixin/color";
 .side-bar__header{
   height: 100px;
   background-color: #253141;
@@ -17,8 +14,7 @@
       @include colofff;
     }
     &__menu{
-      width: 60px;
-      @include fbjcbet;
+      @include fb;
       line-height: 20px;
       &__icon{
         margin-left: 5px;
