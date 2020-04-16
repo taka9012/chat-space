@@ -10,5 +10,14 @@
         = link_to '#' do
           Edit
   .chat-main__message
-    .chat-main__message__list
-  .chat-main__form
+    = render partial: "loop-message"
+    = render partial: "loop-message"
+  .chat-main__btm
+    .chat-main__btm__form
+      .chat-main__btm__form__text<
+        type a message
+      %label{class: "chat-main__btm__form__image"} 
+        = icon('fas', 'image')
+        %input{type: "file"}
+    .chat-main__btm__send<
+      Send

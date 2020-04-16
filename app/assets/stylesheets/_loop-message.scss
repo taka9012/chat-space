@@ -1,0 +1,17 @@
+.namedate{
+  display: flex;
+  &__name{
+    color: #333333;
+    font-size: 16px;
+  }
+  &__date{
+    color: #999999;
+    font-size: 12px;
+  }
+}
+.message{
+  font-size: 14px;
+  color: #434a54;
+  margin-top: 12px;
+  padding-bottom: 46px;
+}
