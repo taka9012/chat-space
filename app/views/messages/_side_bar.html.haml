@@ -11,8 +11,10 @@
           = link_to edit_user_path(current_user), class: "icon-btn" do
             %i.fa.fa-cog.icon-color
   .side-bar__body
-    .side-bar__body__group
-      .side-bar__body__group__tech<
-        techcamp
-      .side-bar__body__group__message<
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .side-bar__body__group
+        = link_to '#' do
+          .side-bar__body__group__tech
+            = group.name
+          .side-bar__body__group__message<
+            まだメッセージがありません
