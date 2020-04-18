@@ -10,14 +10,12 @@
         = link_to '#' do
           Edit
   .chat-main__message
-    = render partial: "loop-message"
-    = render partial: "loop-message"
+    = render @messages
   .chat-main__btm
-    .chat-main__btm__form
-      .chat-main__btm__form__text<
-        type a message
-      %label{class: "chat-main__btm__form__image"} 
-        = icon('fas', 'image')
-        %input{type: "file", class: "hidden"}
-    .chat-main__btm__send<
-      Send
+    = form_for [@group, @message] do |f|
+      .chat-main__btm__box
+        = f.text_field :content, class: 'chat-main__btm__box__text', placeholder: 'type a message'
+        = f.label :image, class: 'chat-main__btm__box__image' do
+          = icon('fas', 'image')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'chat-main__btm__send'

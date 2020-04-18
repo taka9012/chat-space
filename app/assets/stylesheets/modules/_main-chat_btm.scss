@@ -1,17 +1,18 @@
 .chat-main__btm{
   height: 90px;
   background-color: #d2d2d2;
-  @include fb;
   padding: 20px 40px;
-  &__form{
-    @include heiwid(50px,390px);
+  form{
     @include fb;
+  }
+  &__box{
+    width: 100%;
     position: relative;
     &__text{
-      padding: 0 10px 0;
-      @include bgcolof;
-      width: 100%;
-      @include lihei50;
+      @include heiwid(50px,100%);
+      padding: 0 40px 0 10px;
+      color: #434a54;
+      border-style: none;
     }
     &__image{
       font-size: 1.3rem;
@@ -25,11 +26,12 @@
     }
   }
   &__send{
-    margin-left: 15px;
     @include heiwid(50px,100px);
+    margin-left: 15px;
     background-color: #38aef0;
     @include colofff;
-    text-align: center;
-    @include lihei50;
+    cursor: pointer;
+    padding: 0 30px;
   }
+  
 } 
