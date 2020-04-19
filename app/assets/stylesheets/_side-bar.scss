@@ -5,6 +5,9 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 0;
+    a{
+      text-decoration: none;
+    }
     &__group{
       &__tech{        
         @include colofff;
