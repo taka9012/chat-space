@@ -1,11 +1,11 @@
 .chat-main{
-  $wcal: calc(100vw - 300px);
-  @include heiwid(100vh, $wcal);
+  
+  width: calc(100vw - 300px);
   float: right;
   &__message{
     height: calc(100vh - 190px);
     background-color: #fafafa;
-    padding: 35px 0 0 40px;
-    
+    padding: 35px 40px;
+    overflow: scroll;
   }
 }
