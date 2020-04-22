@@ -1,6 +1,5 @@
 .chat-main{
-  // $wcal: calc(100vw - 300px);
-  // @include heiwid(100vh, $wcal);
+  
   width: calc(100vw - 300px);
   float: right;
   &__message{
